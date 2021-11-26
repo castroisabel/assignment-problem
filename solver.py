@@ -54,8 +54,8 @@ obj_results = solver.solve(model, tee = True)
 # Results
 l = list(model.variables.keys())
 model.obj_function()
-print('\nTask assigned to each developer:')
 
+print('\nTask assigned to each developer:')
 for i in l:
     if model.variables[i]() != 0:
         print(i)
