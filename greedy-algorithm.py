@@ -22,7 +22,7 @@ def greedy_algorithm(costs):
     best_solution = [0 for i in range(m)]
     minor_task = 0
     index_minor_task = 0
-    tasks = [i for i in range(n)]
+    tasks = list(range(n))
 
     for i in range(m):
         for j in range(len(tasks)):
