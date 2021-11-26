@@ -16,8 +16,8 @@ def greedy_algorithm(costs):
         list of integers: final solution
     """
     
-    m = len(costs) # developers
-    n = len(costs[0]) # tasks
+    m = len(costs) # number of developers
+    n = len(costs[0]) # number of tasks
     
     best_solution = [0 for i in range(m)]
     minor_task = 0
